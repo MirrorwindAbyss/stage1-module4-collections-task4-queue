@@ -10,12 +10,12 @@ public class DishOrderDeterminer {
         List<Integer> result = new ArrayList<>();
         Queue<Integer> dishes = new ArrayDeque<>();
 
-        for(int i = 0 ; i< numberOfDishes; i++){
+        for (int i = 0; i < numberOfDishes; i++) {
             dishes.add(i);
         }
 
-        while(!dishes.isEmpty()){
-            for (int i = 0; i< everyDishNumberToEat; i++){
+        while (!dishes.isEmpty()) {
+            for (int i = 0; i < everyDishNumberToEat; i++) {
                 dishes.add(dishes.poll());
             }
 
