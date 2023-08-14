@@ -10,7 +10,7 @@ public class DishOrderDeterminer {
         List<Integer> result = new ArrayList<>();
         Queue<Integer> dishes = new ArrayDeque<>();
 
-        for (int i = 1; i < numberOfDishes; i++) {
+        for (int i = 1; i <= numberOfDishes; i++) {
             dishes.add(i);
         }
 
